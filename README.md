@@ -16,6 +16,7 @@ resource "aws_s3_bucket" "pdf-bucket" {
 
 resource "aws_vpc" "main-vpc" {
   cidr_block       = "10.0.0.0/16"
+  
   instance_tenancy = "default"
   enable_dns_hostnames = true
 
